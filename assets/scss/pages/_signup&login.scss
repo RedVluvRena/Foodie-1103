@@ -1,0 +1,51 @@
+.bgimage {
+    background-image: url(/assets/images/travel_bg_pc.png);
+    padding: 100px;
+}
+
+.signupFormBox {
+    max-width: 350px;
+}
+
+@include mobile-sm {
+    .bgimage {
+        width: 100%;
+        padding: 0;
+    }
+
+    .signupFormBox {
+        width: auto;
+        text-align: center;
+    }
+
+    .mobileSmStyle {
+        width: 200px;
+        margin: auto;
+    }
+
+    .container {
+        padding: 0;
+        margin: auto;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+}
+
+// 1031fix高度
+.login-fix-top {
+    margin-top: calc(90px + 60px);
+    margin-bottom: 120px;
+}
+@include pad{
+    .login-fix-top {
+        margin-top: calc(90px + 30px);
+        margin-bottom: 70px;
+    }  
+}
