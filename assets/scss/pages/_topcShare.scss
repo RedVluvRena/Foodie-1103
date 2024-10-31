@@ -285,6 +285,13 @@ h5.titleCity {
     border-radius: 8px;
 }
 
+@include pad{
+    .right-section-width {
+        padding: 16px 10px 40px 10px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+}
 
 // 搜尋框
 .input-group-text {

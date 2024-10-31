@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>主題分享</title>
-
-    <!-- <link rel="stylesheet" href="././assets/scss/pages/_topicSubpage.scss"> -->
-    <script type="module" crossorigin src="/Foodie-webDesign/assets/main-d76c587e.js"></script>
-    <link rel="stylesheet" href="/Foodie-webDesign/assets/main-7363f1ff.css">
-  </head>
-  
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吃貨發現-登入</title>
+  <script type="module" crossorigin src="/Foodie-1103/assets/main-98115344.js"></script>
+  <link rel="stylesheet" href="/Foodie-1103/assets/main-a0f14af4.css">
+</head>
+<body>
     
 <nav class="navbar navbar-light bg-light-w navbar-expand-lg fixed-top">
   <div class="container">
 
 
       <a class="navbar-brand" href="/Foodie-webDesign/pages/index.html">
-      <img src="/Foodie-webDesign/assets/logo-bfa90aef.svg" alt="">
+      <img src="/Foodie-1103/assets/logo-bfa90aef.svg" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/Foodie-webDesign/assets/logo-bfa90aef.svg" alt=""></h5>
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/Foodie-1103/assets/logo-bfa90aef.svg" alt=""></h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -41,10 +37,10 @@
             <a class="nav-link  nav-subtitle" href="topicShare.html">主題分享</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-subtitle" href="#">假日怎麼玩？</a>
+            <a class="nav-link nav-subtitle" href="holidayStrategy.html">假日怎麼玩？</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-subtitle me-lg-0" href="#">註冊與登入</a>
+            <a class="nav-link nav-subtitle me-lg-0" href="login.html">註冊與登入</a>
           </li>
 
         </ul>
@@ -55,54 +51,34 @@
   </div>
 </nav>
 
-
-    <div class="image-banner container-fluid">
- 
-      <div class="imageBannerTitle text-white">
-        <h1 class="">主題分享-測</h1>
-      </div>
+    <div class="bgimage">
+        <div class="container p-5 login-fix-top">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <h2 class="text-center">登入</h2>
+                    <form class="signupFormBox d-flex flex-column mx-auto">
+                        <div class="mb-5">
+                            <label for="email" class="form-label">電子郵件</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-5">
+                            <label for="password" class="form-label">密碼</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn text-white btn-warning mb-5 fs-5 mobileSmStyle">確認</button>
+                        <button type="submit" class="btn text-white btn-warning fs-5 mobileSmStyle" onclick="location.href='../pages/signup.html'">註冊帳戶</button>
+                    </form>
+                </div>
+            </div>  
+        </div>
     </div>
-
-<div class="bg-gray-space  container-fluid">
-
-    <div class="">
-
-    <div class="mainArea mx-auto text-center pt-4 pb-4 container blank-space">
-
-      <div class="row">
-
-        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">首頁</a></li>
-            <li class="breadcrumb-item"><a href="#">主題分享</a></li>
-            <li class="breadcrumb-item active" aria-current="page">台南 4 家超人氣老屋、美式、日式早午餐推薦</li>
-          </ol>
-        </nav>
-
-      
-          <!-- <div class="">
-            <span class=""><a href="#">上一頁</a></span>
-            <span class=""><a href="#">下一頁</a></span>
-          <div> -->
-  
-
-    </div>
-
-      <h1 class="text-center my-2 title-deco pb-3">台南 4 家超人氣老屋、美式、日式早午餐推薦</h1>
-      <p class="mb-3 mb-3">說到台南，除了琳瑯滿目的在地小吃，更是有許多美味又盛的台南早午餐，每一家都有其獨特的風格，無論是文青老屋風、美式或日式都有！今天小編要推薦4家超人氣台南早午餐，快來筆記筆記！台南許多熱門的早午餐店都隱身在巷弄內，且都是由老宅改造，一家比一家厲害，實在是竸爭激烈呀～如果在台南停留的天數有限，不妨參考小推薦的這 4 家，現在就把這篇加入囗袋名單，下次不用再選擇障礙啦!</p>
-    </div>
-
-  </div>
-</div>
-
-
     <footer>
     <div class="container">
 
         <div class="row footer">
 
             <div class="col-12 footerflex">
-                <img class="footer-logo pb-lg-1 pb-5"  src="/Foodie-webDesign/assets/logo-footer-w-631c3dd1.png" alt="">
+                <img class="footer-logo pb-lg-1 pb-5"  src="/Foodie-1103/assets/logo-footer-w-631c3dd1.png" alt="">
    
                 <div class="iconbox icon">
                     <a href="#">
@@ -136,7 +112,6 @@
 
 
     </div>
-</footer>
-    
-  </body>
+</footer>    
+</body>
 </html>
