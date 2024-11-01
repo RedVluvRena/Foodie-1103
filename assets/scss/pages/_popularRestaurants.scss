@@ -201,6 +201,8 @@ body {
 
 
 // 左側篩選器
+
+
 h5.titleCity {
     font-weight: 400;
     padding-left: 16px;
@@ -246,6 +248,20 @@ h5.titleCity {
     outline: 0;
     box-shadow: 0 0 0 0.25rem #c8c8c866;
 }
+
+// 篩選器ejs
+.filter-padding{
+    margin-right: 20px;
+    padding-right: 30px;
+}
+
+@include pad{
+    .filter-padding{
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+}
+
 
 // 篩選器手機版消失
 @include pad {

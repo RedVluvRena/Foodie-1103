@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吃貨發現-今天想吃甚麼</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <div class="slogan container-fluid">
+            <div class="container sloganTitle">
+                <h1>今天想吃什麼？</h1>
+                <p>沒想法？可以從這裡找到今天想吃的～</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-3 col-12 mobile-none">
+                        <ul class="list">
+                            <li>
+                                <h5 class="h5">地區</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="台北市" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">台北市</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="新北市" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">新北市</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="桃園市" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">桃園市</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="台中市" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">台中市</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="高雄市" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">高雄市</label>
+                                </div>
+                            </li>
+                            <li>
+                                <h5 class="h5">價格</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="平價美食" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">平價美食</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="中等價位" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">中等價位</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="高級餐廳" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">高級餐廳</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="土豪美食" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">土豪美食</label>
+                                </div>
+                            </li>
+                            <li>
+                                <h5 class="h5">菜系</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="日式" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">日式</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="中式" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">中式</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="美式" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">美式</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="西式" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">西式</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="韓式" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">韓式</label>
+                                </div>
+                            </li>
+                            <li>
+                                <h5 class="h5">類別</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="輕食早午餐" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">輕食早午餐</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="人氣Buffet"
+                                        id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">人氣Buffet</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="元氣健身餐" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">元氣健身餐</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="氣氛餐酒館" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">氣氛餐酒館</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="五星級饗宴" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">五星級饗宴</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="夯景點美食" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">夯景點美食</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="美味消夜" id="flexCheckDefault">
+                                    <label class="form-check-label labelText" for="flexCheckDefault">美味消夜</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9 col-12">
+                        <div class="results">
+                            <div class="row">
+                                <div class="col-12">
+
+                                <div class="search d-flex position-relative">
+                                    <input type="text" class="form-control searchBar d-flex" placeholder="今天想吃什麼？">
+                                    <button type="button"
+                                        class="searchBtn position-absolute top-50 end-0 translate-middle-y">
+                                        <img src="../assets/images/search.png" alt="">
+                                    </button>
+                                </div>
+                                <ul class="result-list">
+                                    <li class="d-flex result-list-li" onclick="window.open('store.html', '_blank')">
+                                        <div class="storeImg">
+                                            <img src="../assets/images/search_1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <ul class="storeInformation">
+                                                <li >
+                                                    <div class="storeName d-flex justify-content-between">
+                                                        <h4>老四川巴屬麻辣燙</h4>
+                                                        <button class="collectBtn">
+
+                                                            <img src="../assets/images/collect.png" alt="">
+
+                                                        </button>
+                                                    </div>
+                                                    <div class="time">
+                                                        <img src="../assets/images/time.png" alt="">
+                                                        <span class="timeText">00:00 ~ 05:00，11:30 ~ 00:00</span>
+                                                    </div>
+                                                    <div class="place">
+                                                        <img src="../assets/images/place.png" alt="">
+                                                        <span class="placeText">台北市中山區南京東路二段 45 號</span>
+                                                    </div>
+                                                    <div class="category-item">
+                                                        <span>中式</span>
+                                                        <span>美味宵夜</span>
+                                                        <span>中等價位</span>
+                                                    </div>
+
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="d-flex result-list-li" onclick="window.open('store.html', '_blank')">
+                                        <div class="storeImg">
+                                            <img src="../assets/images/search_2.png" alt="">
+                                        </div>
+                                        <div>
+                                            <ul class="storeInformation">
+                                                <li>
+                                                    <div class="storeName d-flex justify-content-between">
+                                                        <h4>碳佐麻里精品燒肉 高雄時代店</h4>
+                                                        <button class="collectBtn">
+                                                           
+                                                            <img src="../assets/images/collect.png" alt="">
+                                                          
+                                                        </button>
+                                                    </div>
+                                                    <div class="time">
+                                                        <img src="../assets/images/time.png" alt="">
+                                                        <span class="timeText">11:30~00:00</span>
+                                                    </div>
+                                                    <div class="place">
+                                                        <img src="../assets/images/place.png" alt="">
+                                                        <span class="placeText">高雄市前鎮區時代南一路 85 號</span>
+                                                    </div>
+                                                    <div class="category-item">
+                                                        <span>中式</span>
+                                                        <span>美味宵夜</span>
+                                                        <span>中等價位</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="d-flex result-list-li" onclick="window.open('store.html', '_blank')">
+                                        <div class="storeImg">
+                                            <img src="../assets/images/search_1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <ul class="storeInformation">
+                                                <li>
+                                                    <div class="storeName d-flex justify-content-between" >
+                                                        <h4>碳佐麻里精品燒肉 高雄時代店</h4>
+                                                        <button class="collectBtn">
+                                                            <img src="../assets/images/collect.png" alt="">
+                                                        </button>
+                                                    </div>
+                                                    <div class="time">
+                                                        <img src="../assets/images/time.png" alt="">
+                                                        <span class="timeText">11:30~00:00</span>
+                                                    </div>
+                                                    <div class="place">
+                                                        <img src="../assets/images/place.png" alt="">
+                                                        <span class="placeText">高雄市前鎮區時代南一路 85 號</span>
+                                                    </div>
+                                                    <div class="category-item">
+                                                        <span>中式</span>
+                                                        <span>美味宵夜</span>
+                                                        <span>中等價位</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="d-flex result-list-li">
+                                        <div class="storeImg">
+                                            <img src="../assets/images/search_2.png" alt="">
+                                        </div>
+                                        <div>
+                                            <ul class="storeInformation">
+                                                <li>
+                                                    <div class="storeName d-flex justify-content-between" >
+                                                        <h4>碳佐麻里精品燒肉 高雄時代店</h4>
+                                                        <button class="collectBtn">
+                                                            <img src="../assets/images/collect.png" alt="">
+                                                        </button>
+                                                    </div>
+                                                    <div class="time">
+                                                        <img src="../assets/images/time.png" alt="">
+                                                        <span class="timeText">11:30~00:00</span>
+                                                    </div>
+                                                    <div class="place">
+                                                        <img src="../assets/images/place.png" alt="">
+                                                        <span class="placeText">高雄市前鎮區時代南一路 85 號</span>
+                                                    </div>
+                                                    <div class="category-item">
+                                                        <span>中式</span>
+                                                        <span>美味宵夜</span>
+                                                        <span>中等價位</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="d-flex result-list-li" onclick="window.open('store.html', '_blank')">
+                                        <div class="storeImg">
+                                            <img src="../assets/images/search_1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <ul class="storeInformation">
+                                                <li>
+                                                    <div class="storeName d-flex justify-content-between">
+                                                        <h4>碳佐麻里精品燒肉 高雄時代店</h4>
+                                                        <button class="collectBtn">
+                                                            <img src="../assets/images/collect.png" alt="">
+                                                        </button>
+                                                    </div>
+                                                    <div class="time">
+                                                        <img src="../assets/images/time.png" alt="">
+                                                        <span class="timeText">11:30~00:00</span>
+                                                    </div>
+                                                    <div class="place">
+                                                        <img src="../assets/images/place.png" alt="">
+                                                        <span class="placeText">高雄市前鎮區時代南一路 85 號</span>
+                                                    </div>
+                                                    <div class="category-item">
+                                                        <span>中式</span>
+                                                        <span>美味宵夜</span>
+                                                        <span>中等價位</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <hr>
+                                    <li class="d-flex result-list-li">
+                                        <div class="storeImg">
+                                            <img src="../assets/images/search_2.png" alt="">
+                                        </div>
+                                        <div>
+                                            <ul class="storeInformation">
+                                                <li onclick="window.open('store.html', '_blank')">
+                                                    <div class="storeName d-flex justify-content-between" ></div>
+                                                        <h4>碳佐麻里精品燒肉 高雄時代店</h4>
+                                                        <button class="collectBtn">
+                                                            <img src="../assets/images/collect.png" alt="">
+                                                        </button>
+                                                    </div>
+                                                    <div class="time">
+                                                        <img src="../assets/images/time.png" alt="">
+                                                        <span class="timeText">11:30~00:00</span>
+                                                    </div>
+                                                    <div class="place">
+                                                        <img src="../assets/images/place.png" alt="">
+                                                        <span class="placeText">高雄市前鎮區時代南一路 85 號</span>
+                                                    </div>
+                                                    <div class="category-item">
+                                                        <span>中式</span>
+                                                        <span>美味宵夜</span>
+                                                        <span>中等價位</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+</div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

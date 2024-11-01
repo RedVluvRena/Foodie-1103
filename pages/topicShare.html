@@ -31,126 +31,7 @@
 
         <!-- 左側篩選器＿桌機版 -->
         <div class="col-lg-2 filter-lg-none">
-
-          <div class="list-group-city left-section-width">
-
-            <ul>
-              <li>
-                <h5 class="titleCity">北部區域</h5>
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  臺北市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  新北市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  基隆市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  新竹市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  桃園市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  新竹縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  宜蘭縣
-                </label>
-              </li>
-
-              <li>
-                <h5 class="titleCity">中部區域</h5>
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  臺中市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  苗栗縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  彰化縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  南投縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  雲林縣
-                </label>
-              </li>
-
-              <li>
-                <h5 class="titleCity">南部區域</h5>
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  高雄市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  臺南市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  嘉義市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  嘉義縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  屏東縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  澎湖縣
-                </label>
-              </li>
-
-              <li>
-                <h5 class="titleCity">東部區域</h5>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  花蓮縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  臺東縣
-                </label>
-              </li>
-            </ul>
-
-          </div>
-
+          <%- include('./layout/filterMap'); -%>
         </div>
 
 
@@ -189,7 +70,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <div class="list-group-city">
+                  <%- include('./layout/filterMap'); -%>
+                  <!-- <div class="list-group-city">
 
                     <ul>
                       <li>
@@ -303,7 +185,7 @@
                       </li>
                     </ul>
 
-                  </div>
+                  </div> -->
                 </div>
                 <!-- <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

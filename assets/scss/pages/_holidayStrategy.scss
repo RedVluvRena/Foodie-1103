@@ -2,7 +2,7 @@ body {
     background: #F9F9F9;
 }
 
-.card{
+.card-holiday{
     // width: 100%;
     border: none;
     margin: 24px 16px;
@@ -71,7 +71,8 @@ body {
 
 @include mobile {
     .herosection-banner  {
-       
+        background-image: url(../images/holiday_banner_mb.png);
+        background-repeat: no-repeat; 
 
         .bannerTitle {
             padding-top: calc(90px + 60px);

@@ -190,6 +190,7 @@
 @include pad {
     .topic-title-area {
         font-size: 20px;
+
         h1 {
             font-size: 28px;
         }
@@ -217,28 +218,29 @@
     }
 }
 
-.socialIconTop{
+.socialIconTop {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
     padding-bottom: 1rem;
-    
+
 }
 
 // shareIcon
-@include pad{
-    .shareIcon img{
+@include pad {
+    .shareIcon img {
         width: 35px;
-        }   
-        .socialIconTop{
-          padding: 0px;
-          margin: 0px;  
-        }
+    }
+
+    .socialIconTop {
+        padding: 0px;
+        margin: 0px;
+    }
 
 }
 
 //stickyBarTag 
-@include pad{
-    .row > .scrollspy-example{
+@include pad {
+    .row>.scrollspy-example {
         padding-right: 0;
         padding-left: 0;
     }
@@ -316,7 +318,8 @@ nav.stickyBarTag {
         overflow-x: scroll !important;
         flex-wrap: nowrap;
     }
-    nav.stickyBarTag .nav-pills{
+
+    nav.stickyBarTag .nav-pills {
         padding: 0px;
     }
 }
@@ -336,7 +339,10 @@ nav.stickyBarTag {
 
 @include pad {
     .titleInfo {
-        padding-bottom: 56px;
+        padding-top: 16px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 36px;
     }
 }
 
@@ -429,11 +435,6 @@ nav.stickyBarTag {
 }
 
 // 更多資訊按鈕
-// more img.detailIcon:hover{
-.more a:hover {
-    transform: translate(0.1rem, 0rem);
-    transition: all 0.3s;
-}
 
 .more {
     font-size: 16px;
@@ -441,9 +442,21 @@ nav.stickyBarTag {
     border-radius: 4px;
     color: #F08929;
     background-color: #fff;
-    padding: 8px 16px;
+    padding: 8px 4px 8px 16px;
     display: inline-block;
     margin-top: 24px;
+    height: 45px;
+}
+.more a:hover > span.detailIcon {   
+    transform: translate(0.3rem, 0rem);
+    transition: all 0.3s;
+}
+
+.detailIcon {
+    display: inline-block;
+    img{
+        margin-bottom: 2px;
+    }
 }
 
 .more-main:hover {
@@ -508,4 +521,3 @@ nav.stickyBarTag {
 .guesslink {
     cursor: pointer;
 }
-

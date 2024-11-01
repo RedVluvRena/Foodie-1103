@@ -28,126 +28,7 @@
 
         <!-- 左側篩選器＿桌機版 -->
         <div class="col-lg-2 filter-lg-none">
-
-          <div class="list-group-city left-section-width">
-
-            <ul>
-              <li>
-                <h5 class="titleCity">北部區域</h5>
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  臺北市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  新北市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  基隆市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  新竹市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  桃園市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  新竹縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  宜蘭縣
-                </label>
-              </li>
-
-              <li>
-                <h5 class="titleCity">中部區域</h5>
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  臺中市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  苗栗縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  彰化縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  南投縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  雲林縣
-                </label>
-              </li>
-
-              <li>
-                <h5 class="titleCity">南部區域</h5>
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  高雄市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  臺南市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  嘉義市
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  嘉義縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  屏東縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  澎湖縣
-                </label>
-              </li>
-
-              <li>
-                <h5 class="titleCity">東部區域</h5>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  花蓮縣
-                </label>
-
-                <label class="city">
-                  <input class="form-check-input" type="checkbox" value="">
-                  臺東縣
-                </label>
-              </li>
-            </ul>
-
-          </div>
-
+          <%- include('./layout/filterMap'); -%>
         </div>
 
 
@@ -180,123 +61,11 @@
                   <h5 class="modal-title" id="filtereModalLabel">各縣市熱門餐廳</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                 
+
                 <div class="modal-body">
-                  <div class="list-group-city">
 
-                    <ul>
-                      <li>
-                        <h5 class="titleCity">北部區域</h5>
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          臺北市
-                        </label>
+                  <%- include('./layout/filterMap'); -%>
 
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          新北市
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          基隆市
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          新竹市
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          桃園市
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          新竹縣
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          宜蘭縣
-                        </label>
-                      </li>
-                      <li>
-                        <h5 class="titleCity">中部區域</h5>
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          臺中市
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          苗栗縣
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          彰化縣
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          南投縣
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          雲林縣
-                        </label>
-                      </li>
-                      <li>
-                        <h5 class="titleCity">南部區域</h5>
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          高雄市
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          臺南市
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          嘉義市
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          嘉義縣
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          屏東縣
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          澎湖縣
-                        </label>
-                      </li>
-                      <li>
-                        <h5 class="titleCity">東部區域</h5>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          花蓮縣
-                        </label>
-
-                        <label class="city">
-                          <input class="form-check-input" type="checkbox" value="">
-                          臺東縣
-                        </label>
-                      </li>
-                    </ul>
-
-                  </div>
                 </div>
 
               </div>
@@ -311,9 +80,10 @@
             <div class="col-12 col-sm-6 card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_5.jpg" class="img-food scale-hover" alt="...">
-                 
+
                   <!-- '_top' -->
                 </div>
 
@@ -360,7 +130,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w" onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w"
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_2.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -413,7 +184,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_3.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -464,7 +236,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_4.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -515,7 +288,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_1.jpg" class="img-food scale-hover" alt="...">
                   <!-- '_top' -->
                 </div>
@@ -563,7 +337,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_2.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -616,7 +391,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_3.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -667,7 +443,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_5.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -718,7 +495,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_1.jpg" class="img-food scale-hover" alt="...">
                   <!-- '_top' -->
                 </div>
@@ -766,7 +544,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_2.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -819,7 +598,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_3.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -870,7 +650,8 @@
             <div class="col-12 col-sm-6  card-store">
 
               <div class="row">
-                <div class="col-md-12 col-lg-5 food-card-link px-w " onclick="window.open('restaurant01.html', '_blank')">
+                <div class="col-md-12 col-lg-5 food-card-link px-w "
+                  onclick="window.open('restaurant01.html', '_blank')">
                   <img src="../assets/images/popular_store_4.jpg" class="img-food scale-hover" alt="...">
                 </div>
 
@@ -952,7 +733,7 @@
 
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script type="module" src="../main.js"></script>
-     
+
 </body>
 
 </html>
