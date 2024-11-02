@@ -110,6 +110,13 @@ body{
 .result-list-li{
     padding: 24px 16px;
 }
+
+@include pad{
+    .result-list-li{
+        flex-direction: column;
+    }
+}
+
 .storeName{
     width: 548px;
 }
