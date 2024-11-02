@@ -1,416 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>假日怎麼玩？</title>
 </head>
+
 <body>
     <%- include('./layout/header'); -%>
-    <div class="herosection-banner  container-fluid">
-        <div class="container bannerTitle text-white">
-            <h1 class="">假日怎麼玩？</h1>
-            <p class="">假日不知道去哪嗎？來﻿看看這些好玩的地方</p>
-        </div>
-    </div>
-
-    <!-- 內容開始 -->
-    <div class="container holiday-block">
-        <div class="row">
-
-            <!-- 左側篩選器＿桌機版 -->
-            <div class="col-lg-2 filter-lg-none">
-
-                <div class="list-group-city left-section-width">
-
-                    <ul>
-                        <li>
-                            <h5 class="titleCity">北部區域</h5>
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                臺北市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                新北市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                基隆市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                新竹市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                桃園市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                新竹縣
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                宜蘭縣
-                            </label>
-                        </li>
-
-                        <li>
-                            <h5 class="titleCity">中部區域</h5>
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                臺中市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                苗栗縣
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                彰化縣
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                南投縣
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                雲林縣
-                            </label>
-                        </li>
-
-                        <li>
-                            <h5 class="titleCity">南部區域</h5>
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                高雄市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                臺南市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                嘉義市
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                嘉義縣
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                屏東縣
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                澎湖縣
-                            </label>
-                        </li>
-
-                        <li>
-                            <h5 class="titleCity">東部區域</h5>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                花蓮縣
-                            </label>
-
-                            <label class="city">
-                                <input class="form-check-input" type="checkbox" value="">
-                                臺東縣
-                            </label>
-                        </li>
-                    </ul>
-
-                </div>
-
+        <div class="herosection-banner  container-fluid">
+            <div class="container bannerTitle text-white">
+                <h1 class="">假日怎麼玩？</h1>
+                <p class="">假日不知道去哪嗎？來﻿看看這些好玩的地方</p>
             </div>
+        </div>
 
+        <!-- 內容開始 -->
+        <div class="container holiday-block">
+            <div class="row">
 
-            <!-- 右側result -->
-            <div class="col-12 col-lg-10 right-section-width">
+                <!-- 左側篩選器＿桌機版 -->
 
-
-                <div class="d-flex align-items-center position-relative m-lg-5 m-0">
-                    <!-- 篩選器手機版出現按鈕 -->
-                    <span class="filter pt-1 pb-1">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#filterModal">
-                            <img src="../assets/images/filterIcon.svg" alt="filter">
-                        </a>
-                    </span>
-
-                    <input class="form-control input-group-text text-start" type="text" placeholder="今天想去哪玩？" id="search">
-                    <button type="button" class="search-btn position-absolute top-50 translate-middle-y">
-                        <img src="../assets/images/searchIcon.png" alt="">
-                    </button>
+                <div class="col-lg-2 filter-lg-none">
+                    <%- include('./layout/filterMap'); -%>
                 </div>
 
 
-                <!-- 篩選器手機版_視窗開始 -->
+                <!-- 右側result -->
+                <div class="col-12 col-lg-10 right-section-width">
 
-                <!-- Modal -->
-                <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="filtereModalLabel">各縣市熱門餐廳</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
 
-                            <div class="modal-body">
-                                <div class="list-group-city">
+                    <div class="d-flex align-items-center position-relative m-lg-5 m-0">
+                        <!-- 篩選器手機版出現按鈕 -->
+                        <span class="filter pt-1 pb-1">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#filterModal">
+                                <img src="../assets/images/filterIcon.svg" alt="filter">
+                            </a>
+                        </span>
 
-                                    <ul>
-                                        <li>
-                                            <h5 class="titleCity">北部區域</h5>
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                臺北市
-                                            </label>
+                        <input class="form-control input-group-text text-start" type="text" placeholder="今天想去哪玩？"
+                            id="search">
+                        <button type="button" class="search-btn position-absolute top-50 translate-middle-y">
+                            <img src="../assets/images/searchIcon.png" alt="">
+                        </button>
+                    </div>
 
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                新北市
-                                            </label>
 
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                基隆市
-                                            </label>
+                    <!-- 篩選器手機版_視窗開始 -->
 
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                新竹市
-                                            </label>
+                    <!-- Modal -->
+                    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="filtereModalLabel">各縣市熱門餐廳</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
 
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                桃園市
-                                            </label>
+                                <div class="modal-body">            
 
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                新竹縣
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                宜蘭縣
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <h5 class="titleCity">中部區域</h5>
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                臺中市
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                苗栗縣
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                彰化縣
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                南投縣
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                雲林縣
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <h5 class="titleCity">南部區域</h5>
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                高雄市
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                臺南市
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                嘉義市
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                嘉義縣
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                屏東縣
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                澎湖縣
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <h5 class="titleCity">東部區域</h5>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                花蓮縣
-                                            </label>
-
-                                            <label class="city">
-                                                <input class="form-check-input" type="checkbox" value="">
-                                                臺東縣
-                                            </label>
-                                        </li>
-                                    </ul>
+                                        <%- include('./layout/filterMap'); -%>
 
                                 </div>
-                            </div>
 
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 景點卡片開始 -->
-                <div>
-                    <div class="row">
-                        <div class="col-12 col-lg-6 gx-5 mb-3">
-                          <div class="card card-holiday holiday-card-link">
-                            <img src="../assets/images/holiday_card1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <div class="title_area d-flex justify-content-between">
-                                    <h4 class="holiday-title">奇美博物館</h4>
-                                    <p class="card-text">
-                                      <span class="collectIcon">
-                                          <button type="button" class="collectBgicon" href="#">
-                                              <svg version="1.1" id="collectsvgIcon"
-                                                  xmlns="http://www.w3.org/2000/svg"
-                                                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                  viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
-                                                  xml:space="preserve">
-                                                  <circle class="circlest0" cx="15" cy="15" r="15" />
-                                                  <path class="starst1"
-                                                      d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
-                                              </svg>
-                                          </button>
-                                      </span>
-                                    </p>
-                                </div>
-                                <div class="content_area"></div>
-                                    <p class="card-text fs-6 fs-md-5">
-                                        <span class="detailIcon">
-                                            <img src="../assets/images/openTimeIcon.png" alt="營業時間">
-                                        </span>
-                                        10:00–22:00
-                                    </p>
-                                    <p>
-                                        <span class="detailIcon">
-                                            <img src="../assets/images/landMarkIcon.png" alt="景點地址">
-                                        </span>
-                                        台北市中正區北平西路3號2樓
-                                    </p>
-                                    <a class="foodTag btn-pimary-style text-white mt-3" href="#">台南
-                                    </a>
-                                    <a class="foodTag btn-pimary-style text-white mt-3" href="#">博物館
-                                    </a>
-                                    <a class="foodTag btn-pimary-style text-white mt-3" href="#">展覽
-                                    </a>
-                                </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-6 gx-5 mb-3">
-                            <div class="card card-holiday holiday-card-link ">
-                              <img src="../assets/images/holiday_card2.png" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                  <div class="title_area d-flex justify-content-between">
-                                      <h4 class="holiday-title">台北101觀景台</h4>
-                                      <p class="card-text">
-                                        <span class="collectIcon">
-                                            <button type="button" class="collectBgicon" href="#">
-                                                <svg version="1.1" id="collectsvgIcon"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                    viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
-                                                    xml:space="preserve">
-                                                    <circle class="circlest0" cx="15" cy="15" r="15" />
-                                                    <path class="starst1"
-                                                        d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
-                                                </svg>
-                                            </button>
-                                        </span>
-                                      </p>
-                                  </div>
-                                  <div class="content_area"></div>
-                                      <p class="card-text fs-6 fs-md-5">
-                                          <span class="detailIcon">
-                                              <img src="../assets/images/openTimeIcon.png" alt="營業時間">
-                                          </span>
-                                          09:00-22:00，每天
-                                      </p>
-                                      <p>
-                                          <span class="detailIcon">
-                                              <img src="../assets/images/landMarkIcon.png" alt="景點地址">
-                                          </span>
-                                          台北市信義區信義路五段7號89樓
-                                      </p>
-                                      <a class="foodTag btn-pimary-style text-white mt-3" href="#">台北
-                                      </a>
-                                      <a class="foodTag btn-pimary-style text-white mt-3" href="#">夜景
-                                      </a>
-                                      <a class="foodTag btn-pimary-style text-white mt-3" href="#">摩天大樓
-                                      </a>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 gx-5 mb-3">
-                            <div class="card card-holiday holiday-card-link ">
-                                <img src="../assets/images/holiday_card3.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <div class="title_area d-flex justify-content-between">
-                                        <h4 class="holiday-title">九份老街</h4>
-                                        <p class="card-text">
-                                          <span class="collectIcon">
-                                              <button type="button" class="collectBgicon" href="#">
-                                                  <svg version="1.1" id="collectsvgIcon"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                      viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
-                                                      xml:space="preserve">
-                                                      <circle class="circlest0" cx="15" cy="15" r="15" />
-                                                      <path class="starst1"
-                                                          d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
-                                                  </svg>
-                                              </button>
-                                          </span>
+                    <!-- 景點卡片開始 -->
+                    <div>
+                        <div class="row">
+                            <div class="col-12 col-lg-6 gx-5 mb-3">
+                                <div class="card card-holiday holiday-card-link">
+                                    <img src="../assets/images/holiday_card1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="title_area d-flex justify-content-between">
+                                            <h4 class="holiday-title">奇美博物館</h4>
+                                            <p class="card-text">
+                                                <span class="collectIcon">
+                                                    <button type="button" class="collectBgicon" href="#">
+                                                        <svg version="1.1" id="collectsvgIcon"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
+                                                            xml:space="preserve">
+                                                            <circle class="circlest0" cx="15" cy="15" r="15" />
+                                                            <path class="starst1"
+                                                                d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
+                                                        </svg>
+                                                    </button>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="content_area"></div>
+                                        <p class="card-text fs-6 fs-md-5">
+                                            <span class="detailIcon">
+                                                <img src="../assets/images/openTimeIcon.png" alt="營業時間">
+                                            </span>
+                                            10:00–22:00
                                         </p>
+                                        <p>
+                                            <span class="detailIcon">
+                                                <img src="../assets/images/landMarkIcon.png" alt="景點地址">
+                                            </span>
+                                            台北市中正區北平西路3號2樓
+                                        </p>
+                                        <a class="foodTag btn-pimary-style text-white mt-3" href="#">台南
+                                        </a>
+                                        <a class="foodTag btn-pimary-style text-white mt-3" href="#">博物館
+                                        </a>
+                                        <a class="foodTag btn-pimary-style text-white mt-3" href="#">展覽
+                                        </a>
                                     </div>
-                                    <div class="content_area"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 gx-5 mb-3">
+                                <div class="card card-holiday holiday-card-link ">
+                                    <img src="../assets/images/holiday_card2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="title_area d-flex justify-content-between">
+                                            <h4 class="holiday-title">台北101觀景台</h4>
+                                            <p class="card-text">
+                                                <span class="collectIcon">
+                                                    <button type="button" class="collectBgicon" href="#">
+                                                        <svg version="1.1" id="collectsvgIcon"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
+                                                            xml:space="preserve">
+                                                            <circle class="circlest0" cx="15" cy="15" r="15" />
+                                                            <path class="starst1"
+                                                                d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
+                                                        </svg>
+                                                    </button>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="content_area"></div>
+                                        <p class="card-text fs-6 fs-md-5">
+                                            <span class="detailIcon">
+                                                <img src="../assets/images/openTimeIcon.png" alt="營業時間">
+                                            </span>
+                                            09:00-22:00，每天
+                                        </p>
+                                        <p>
+                                            <span class="detailIcon">
+                                                <img src="../assets/images/landMarkIcon.png" alt="景點地址">
+                                            </span>
+                                            台北市信義區信義路五段7號89樓
+                                        </p>
+                                        <a class="foodTag btn-pimary-style text-white mt-3" href="#">台北
+                                        </a>
+                                        <a class="foodTag btn-pimary-style text-white mt-3" href="#">夜景
+                                        </a>
+                                        <a class="foodTag btn-pimary-style text-white mt-3" href="#">摩天大樓
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 gx-5 mb-3">
+                                <div class="card card-holiday holiday-card-link ">
+                                    <img src="../assets/images/holiday_card3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="title_area d-flex justify-content-between">
+                                            <h4 class="holiday-title">九份老街</h4>
+                                            <p class="card-text">
+                                                <span class="collectIcon">
+                                                    <button type="button" class="collectBgicon" href="#">
+                                                        <svg version="1.1" id="collectsvgIcon"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
+                                                            xml:space="preserve">
+                                                            <circle class="circlest0" cx="15" cy="15" r="15" />
+                                                            <path class="starst1"
+                                                                d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
+                                                        </svg>
+                                                    </button>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="content_area"></div>
                                         <p class="card-text fs-6 fs-md-5">
                                             <span class="detailIcon">
                                                 <img src="../assets/images/openTimeIcon.png" alt="營業時間">
@@ -430,31 +203,31 @@
                                         <a class="foodTag btn-pimary-style text-white mt-3" href="#">老街小吃
                                         </a>
                                     </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-6 gx-5 mb-3">
-                            <div class="card card-holiday holiday-card-link ">
-                                <img src="../assets/images/holiday_card4.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <div class="title_area d-flex justify-content-between">
-                                        <h4 class="holiday-title">台中彩虹村</h4>
-                                        <p class="card-text">
-                                          <span class="collectIcon">
-                                              <button type="button" class="collectBgicon" href="#">
-                                                  <svg version="1.1" id="collectsvgIcon"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                      viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
-                                                      xml:space="preserve">
-                                                      <circle class="circlest0" cx="15" cy="15" r="15" />
-                                                      <path class="starst1"
-                                                          d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
-                                                  </svg>
-                                              </button>
-                                          </span>
-                                        </p>
-                                    </div>
-                                    <div class="content_area"></div>
+                            <div class="col-12 col-lg-6 gx-5 mb-3">
+                                <div class="card card-holiday holiday-card-link ">
+                                    <img src="../assets/images/holiday_card4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="title_area d-flex justify-content-between">
+                                            <h4 class="holiday-title">台中彩虹村</h4>
+                                            <p class="card-text">
+                                                <span class="collectIcon">
+                                                    <button type="button" class="collectBgicon" href="#">
+                                                        <svg version="1.1" id="collectsvgIcon"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
+                                                            xml:space="preserve">
+                                                            <circle class="circlest0" cx="15" cy="15" r="15" />
+                                                            <path class="starst1"
+                                                                d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
+                                                        </svg>
+                                                    </button>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="content_area"></div>
                                         <p class="card-text fs-6 fs-md-5">
                                             <span class="detailIcon">
                                                 <img src="../assets/images/openTimeIcon.png" alt="營業時間">
@@ -474,31 +247,31 @@
                                         <a class="foodTag btn-pimary-style text-white mt-3" href="#">拍照熱點
                                         </a>
                                     </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-6 gx-5 mb-3">
-                            <div class="card card-holiday holiday-card-link ">
-                                <img src="../assets/images/holiday_card5.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <div class="title_area d-flex justify-content-between">
-                                        <h4 class="holiday-title">日月潭</h4>
-                                        <p class="card-text">
-                                          <span class="collectIcon">
-                                              <button type="button" class="collectBgicon" href="#">
-                                                  <svg version="1.1" id="collectsvgIcon"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                      viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
-                                                      xml:space="preserve">
-                                                      <circle class="circlest0" cx="15" cy="15" r="15" />
-                                                      <path class="starst1"
-                                                          d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
-                                                  </svg>
-                                              </button>
-                                          </span>
-                                        </p>
-                                    </div>
-                                    <div class="content_area"></div>
+                            <div class="col-12 col-lg-6 gx-5 mb-3">
+                                <div class="card card-holiday holiday-card-link ">
+                                    <img src="../assets/images/holiday_card5.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="title_area d-flex justify-content-between">
+                                            <h4 class="holiday-title">日月潭</h4>
+                                            <p class="card-text">
+                                                <span class="collectIcon">
+                                                    <button type="button" class="collectBgicon" href="#">
+                                                        <svg version="1.1" id="collectsvgIcon"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
+                                                            xml:space="preserve">
+                                                            <circle class="circlest0" cx="15" cy="15" r="15" />
+                                                            <path class="starst1"
+                                                                d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
+                                                        </svg>
+                                                    </button>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="content_area"></div>
                                         <p class="card-text fs-6 fs-md-5">
                                             <span class="detailIcon">
                                                 <img src="../assets/images/openTimeIcon.png" alt="營業時間">
@@ -518,31 +291,31 @@
                                         <a class="foodTag btn-pimary-style text-white mt-3" href="#">遊船體驗
                                         </a>
                                     </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-6 gx-5 mb-3">
-                            <div class="card card-holiday holiday-card-link">
-                                <img src="../assets/images/holiday_card6.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <div class="title_area d-flex justify-content-between">
-                                        <h4 class="holiday-title">高美濕地</h4>
-                                        <p class="card-text">
-                                          <span class="collectIcon">
-                                              <button type="button" class="collectBgicon" href="#">
-                                                  <svg version="1.1" id="collectsvgIcon"
-                                                      xmlns="http://www.w3.org/2000/svg"
-                                                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                      viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
-                                                      xml:space="preserve">
-                                                      <circle class="circlest0" cx="15" cy="15" r="15" />
-                                                      <path class="starst1"
-                                                          d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
-                                                  </svg>
-                                              </button>
-                                          </span>
-                                        </p>
-                                    </div>
-                                    <div class="content_area"></div>
+                            <div class="col-12 col-lg-6 gx-5 mb-3">
+                                <div class="card card-holiday holiday-card-link">
+                                    <img src="../assets/images/holiday_card6.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <div class="title_area d-flex justify-content-between">
+                                            <h4 class="holiday-title">高美濕地</h4>
+                                            <p class="card-text">
+                                                <span class="collectIcon">
+                                                    <button type="button" class="collectBgicon" href="#">
+                                                        <svg version="1.1" id="collectsvgIcon"
+                                                            xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                            viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;"
+                                                            xml:space="preserve">
+                                                            <circle class="circlest0" cx="15" cy="15" r="15" />
+                                                            <path class="starst1"
+                                                                d="M10.7,17.3L9.2,24l5.8-3.5l5.8,3.5l-1.6-6.6l5.2-4.5l-6.8-0.6L15,6l-2.7,6.3l-6.8,0.6L10.7,17.3z" />
+                                                        </svg>
+                                                    </button>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="content_area"></div>
                                         <p class="card-text fs-6 fs-md-5">
                                             <span class="detailIcon">
                                                 <img src="../assets/images/openTimeIcon.png" alt="營業時間">
@@ -562,12 +335,12 @@
                                         <a class="foodTag btn-pimary-style text-white mt-3" href="#">生態景觀
                                         </a>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                    
+
+
 
                     <!-- 頁籤 -->
                     <nav aria-label="Page navigation example ">
@@ -598,13 +371,14 @@
 
         </div>
         <!-- 最外row end -->
-    </div>
-    <!-- popular-store-block end -->
+        </div>
+        <!-- popular-store-block end -->
 
 
-    <%- include('./layout/footer'); -%>
+        <%- include('./layout/footer'); -%>
 
             <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
             <script type="module" src="../main.js"></script>
 </body>
+
 </html>

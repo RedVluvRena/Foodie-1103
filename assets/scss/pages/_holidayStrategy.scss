@@ -95,60 +95,6 @@ body {
         padding-right: 0.75rem;
     }
 }
-// 1031手機版改掉
-// @include pad {
-//     .main-banner {
-//         background-image: url(../images/popular_banner_mb.jpg);
-
-//         .bannerTitle {
-//             text-align: center;
-
-//             h1 {
-//                 font-size: 32px;
-//                 font-weight: 700;
-//                 line-height: 120%;
-//                 padding-bottom: 16px;
-//             }
-
-//             p {
-//                 font-size: 24px;
-//                 font-weight: 400;
-
-//             }
-//         }
-//     }
-
-//     .px-w {
-//         padding-left: 3rem;
-//         padding-right: 3rem;
-//     }
-// }
-
-// @include mobile {
-//     .main-banner {
-//         background-image: url(../images/popular_banner_mb.jpg);
-
-//         .bannerTitle {
-//             padding-top: calc(90px + 60px);
-//             padding-bottom: 210px;
-//             // padding-top: calc(144px + 64px);
-//             // padding-bottom: 120px;
-//         }
-//     }
-
-//     .px-w {
-//         padding-left: 4rem;
-//         padding-right: 4rem;
-//     }
-// }
-
-// @include mobile-sm {
-
-//     .px-w {
-//         padding-left: 0.75rem;
-//         padding-right: 0.75rem;
-//     }
-// }
 
 .holiday-title {
     font-size: 24px;

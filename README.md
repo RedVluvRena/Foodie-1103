@@ -39,7 +39,7 @@ vite 專案執行開發模式 `npm run dev` 後即會自動監聽，不需要使
 ```cmd
 git init # 若已經初始化過就可以不用輸入
 git add .
-git commit -m '修正holidayStrategy card寬度'
+git commit -m '新增'
 git branch -M main
 git remote add origin [GitHub Repositories Url]
 git push -u origin main // 僅限第一次輸入，往後只需要輸入 git push
@@ -58,7 +58,7 @@ http://localhost:5173/Foodie-1103/pages/popularRestaurants.html
 
 
 git commit -m 'popularRestaurants first commit'
-git commit -m '主題頁_最終更新_修bug2'
+git commit -m '微調'
 git commit -m 'topicSharefirst commit'
 
 git remote add origin https://github.com/RedVluvRena/Foodie-1103.git

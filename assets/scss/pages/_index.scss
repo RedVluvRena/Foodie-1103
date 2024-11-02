@@ -57,6 +57,31 @@
 
   }
 }
+
+@include pad {
+  .search {
+  
+    &-bar {
+      border: none;
+      border-radius: 100px;
+      padding: 13px 100px 13px 16px;
+      margin-top: 24px;
+    }
+  
+    &-btn2 {
+      background-color: #F08929;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      border: none;
+      position: absolute;
+      top: 29px;
+      left: 230px;
+  
+    }
+  }
+}
+
 .card-index{
   width: 306px;
   
@@ -88,7 +113,7 @@
 
 ///category///
 .category {
-  background-image: url("../images/type_bg.png");
+  background-image: url("/assets/images/type_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 120px 0;
@@ -335,12 +360,5 @@ button:focus {
 .container-index{
   max-width: 1320px;
   margin: 0 auto;
-  // padding: 20px 12px;
-  // padding: 0 12px;
 }
 
-
-
-// .other-card .other-card-width{
-//   width: 300px;
-// }
